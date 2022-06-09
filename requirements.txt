@@ -3,4 +3,4 @@ numpy
 librosa
 midiutil
 uuid
-gunicorn==19.9.0
+gunicorn
