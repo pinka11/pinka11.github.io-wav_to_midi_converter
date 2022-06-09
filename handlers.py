@@ -1,4 +1,4 @@
-from converter.converter import Converter
+from converter import Converter
 
 
 # handler to call the convert logic

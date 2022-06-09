@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, send_file
 import requests
-from handlers.handlers import ConvertHandler
+from handlers import ConvertHandler
 
 # initialize flask app
 app = Flask(__name__)
@@ -18,7 +18,7 @@ def add_header(r):
 # render FrontEnd
 @app.route('/')
 def upload_file_page():
-    return render_template('./upload.html')
+    return render_template('./frontEnd.html')
 
 
 # upload method for file
