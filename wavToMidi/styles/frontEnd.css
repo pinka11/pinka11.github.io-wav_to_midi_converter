@@ -1,39 +1,32 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylee.css">
-    <title>Document</title>
-
-  </head>
-  <body class="bg">
-	<h1 id="heading">WAV to MIDI Convertor</h1><br><br>
-    <form
-      action="http://localhost:5000/file_upload"
-      method="POST"
-      enctype="multipart/form-data"
-      class="file-upload-form"
-    >
-      <h2>Upload file to convert</h2>
-      <input id="button" type="file" name="file" />
-      <input id="choice" type="submit" />
-    </form>
-
-	<h1>OR</h1><br>
-
-	<form
-      action="http://localhost:5000/upload_link"
-      method="POST"
-	  enctype="application/x-www-form-urlencoded"
-      class="file-upload-form"
-	 >
-      <h2>Provide a link to a wav</h2>
-      <input id="button" type="text" name="uploadLink"id="uploadLink"/>
-      <input id="choice" type="submit" />
-    </form>
-
-  </body>
-</html>
+.bg{
+    background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg");
+     height: 100%;
+     text-align:center;
+      background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   #heading{
+    color: #c75b7f; font-family: "Great Vibes", cursive; font-size: 50px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #ffi;
+   }
+   #choice {
+     background-color: #ffdab9;
+     border: none;
+     color: black;
+     padding: 8px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     border: solid black 1px;
+   }
+   #button{
+    background-color: #ffdab9	;
+     color: black;
+     padding: 8px 32px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     border: solid black 1px;
+   }
